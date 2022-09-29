@@ -25,10 +25,8 @@
     --font-secondary: 'Lato', sans-serif;
     --font-principal: 'Poppins', sans-serif;
 }
-body {
-    min-height:50%;
-    max-width: 100%;
-
+html, body {
+    min-height: 50%;
 }
 * {
     padding: 0;
