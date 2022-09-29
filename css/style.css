@@ -1,0 +1,338 @@
+:root {
+    --primary-blue: #000000;
+    --primary-body: #0D2C33;
+    --secondary-blue: #022E38;
+    --white: #ffffff;
+    --form-blue: #003845;
+    --bg-form: #D9D9D9;
+    --bg-card: #676565;
+    --bg-botton: #FFD422;
+    --size-title: 28px;
+    --size-title-mobile: 18px;
+    --size-subtitle: 30px;
+    --size-subtitle-mobile: 22px;
+    --items-nav-footer: 16px;
+    --caption: 12px;
+    --body: 22px;
+    --body-m: 18px;
+    --body-mobile: 12px;
+    --footer-mobile: 11px;
+    --card-unit: 24px;
+    --card-unit-mobile: 15px;
+    --card-price: 32px;
+    --card-price-mobile: 28px;
+    --button: 14px;
+    --font-secondary: 'Lato', sans-serif;
+    --font-principal: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+body {
+    font-family: var(--font-principal);
+    font-size: var(--body-mobile)
+}
+
+h1,
+h2 {
+    font-size: var(--size-title-mobile);
+    font-family: var(--font-principal);
+}
+
+h5 {
+    font-size: var(--size-subtitle-mobile)
+}
+
+.w700 {
+    font-weight: 700;
+}
+
+nav {
+    background-color: #000;
+}
+
+.nav-link {
+    color: var(--white);
+    font-size: 20px;
+}
+
+.nav-link:hover,
+.active {
+    color: #FFD422;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 212, 34, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+    border-color: var(--bg-botton);
+}
+
+.text-fecha {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.title-a {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.title-end {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--primary-blue);
+}
+
+.title-form {
+    color: #000000;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: normal;
+}
+
+.border-gray {
+    border: 3px solid;
+    border-color: #676565;
+}
+
+.bg-blue {
+    background-color: var(--primary-blue);
+}
+
+.bg-orange {
+    background-color: var(--bg-botton);
+}
+
+td.bg-codigo,
+.bg-codigo {
+    background-color: var(--bg-card);
+}
+
+.bg-gray {
+    background-color: var(--bg-form);
+}
+
+.bg-title {
+    background-color: var(--bg-botton);
+}
+
+.body-color {
+    color: var(--primary-body);
+}
+
+.rborder-ltop {
+    border-radius: 20px 0px 0px 0px;
+}
+
+.rborder-rtop {
+    border-radius: 0px 20px 0px 0px;
+}
+
+.rborder-bottom {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.carousel-item .banner {
+    content: url("../assets/images/movil.jpg");
+    height: 64vh;
+}
+
+.card-body input[type] {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 4%;
+    border: rgba(255, 255, 255, 0.4);
+}
+
+.card-body input[type]::placeholder {
+    color: var(--primary-blue);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: var(--bg-botton);
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: var(--bg-botton);
+}
+
+td .calendar {
+    font-size: 13px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* .addeventatc {
+    background-color: var(--bg-botton);
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.addeventatc:hover {
+    background-color: var(--bg-botton);
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+} */
+
+
+/* .imgF .huawei {
+    width: 50%;
+}
+
+.imgF .wesap {
+    width: 50%;
+}
+
+.imgF .boyum {
+    width: 40%;
+}
+
+.imgF .ximplify {
+    width: 20%;
+}
+
+.imgF .prolibu {
+    width: 20%;
+} */
+
+.footer {
+    font-family: var(--font-secondary);
+    background-color: #544992;
+    color: white;
+}
+
+.footer h6 {
+    font-size: var(--footer-mobile);
+}
+
+.error {
+    /* visibility: hidden; */
+    width: 30%;
+    padding: 0;
+    font-size: 60%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: var(--body-m)
+    }
+    .title-start {
+        font-size: 28px;
+        line-height: normal;
+    }
+    .title-end {
+        font-size: 26px;
+    }
+    .carousel-item .banner {
+        content: url("../assets/images/landingF.jpg");
+    }
+    .title-form {
+        font-size: 11px;
+    }
+    video {
+        width: 80%;
+        height: auto;
+    }
+    .btn {
+        background-color: var(--bg-botton);
+        color: #000000;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .footer h6 {
+        font-size: var(--body);
+    }
+    .bg-title {
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .title-end {
+        font-size: 28px;
+    }
+    .card-body input[type]::placeholder {
+        font-size: 18px;
+    }
+    .text-fecha {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .title-a {
+        font-size: 78px;
+        font-weight: 700;
+    }
+    body {
+        font-size: var(--body)
+    }
+    .carousel-item .banner {
+        content: url("../assets/images/landingF.jpg");
+        height: 74vh;
+    }
+    .title-form {
+        font-size: 30px;
+    }
+    .imgF .huawei {
+        width: auto;
+    }
+    .imgF .wesap {
+        width: auto;
+    }
+    .imgF .boyum {
+        width: auto;
+    }
+    .imgF .ximplify {
+        width: auto;
+    }
+    .imgF .prolibu {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .title-end {
+        font-size: 44px;
+    }
+}

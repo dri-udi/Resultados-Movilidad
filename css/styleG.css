@@ -1,0 +1,286 @@
+:root {
+    --primary-blue: #005073;
+    --primary-body: #0D2C33;
+    --secondary-blue: #022E38;
+    --white: #ffffff;
+    --form-blue: #003845;
+    --bg-form: #D9D9D9;
+    --bg-card: #00BCEB;
+    --bg-botton: #FFB10F;
+    --size-title: 28px;
+    --size-title-mobile: 18px;
+    --size-subtitle: 30px;
+    --size-subtitle-mobile: 22px;
+    --items-nav-footer: 16px;
+    --caption: 12px;
+    --body: 22px;
+    --body-m: 18px;
+    --body-mobile: 12px;
+    --footer-mobile: 11px;
+    --card-unit: 24px;
+    --card-unit-mobile: 15px;
+    --card-price: 32px;
+    --card-price-mobile: 28px;
+    --button: 14px;
+    --font-secondary: 'Poiret One', cursive;
+    --font-principal: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-principal);
+    font-size: var(--body-mobile)
+}
+
+h1,
+h2 {
+    font-size: var(--size-title-mobile);
+    font-family: var(--font-principal);
+}
+
+h5 {
+    font-size: var(--size-subtitle-mobile)
+}
+
+.title-start {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-blue);
+}
+
+.title-end {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-blue);
+}
+
+.title-form {
+    color: #000000;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: normal;
+}
+
+.bg-blue {
+    background-color: var(--primary-blue);
+}
+
+.bg-orange {
+    background-color: var(--bg-botton);
+}
+
+.bg-codigo {
+    background-color: var(--bg-card);
+}
+
+.bg-gray {
+    background-color: var(--bg-form);
+}
+
+.body-color {
+    color: var(--primary-body);
+}
+
+.rborder-ltop {
+    border-radius: 20px 0px 0px 0px;
+}
+
+.rborder-rtop {
+    border-radius: 0px 20px 0px 0px;
+}
+
+.rborder-bottom {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.carousel-item .banner {
+    src: url("../assets/images/header_movil.jpg");
+    height: 84vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    /* color: var(--primary-cream); */
+}
+
+.carousel-caption img {
+    position: absolute;
+    top: calc(100vh - 47vh);
+    /* transform: translateY(-100%); */
+    left: calc(100vh - 95vh);
+    /* transform: translateX(-40%); */
+}
+
+.logos img {
+    width: 45%;
+    position: absolute;
+    top: calc(100vh - 98vh);
+    /* transform: translateY(-100%); */
+    left: calc(100vh - 101vh);
+}
+
+.card-body input[type] {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 4%;
+    border: rgba(255, 255, 255, 0.4);
+}
+
+.card-body input[type]::placeholder {
+    color: var(--form-blue);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: var(--bg-botton);
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.addeventatc {
+    background-color: var(--bg-botton);
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.addeventatc:hover {
+    background-color: var(--bg-botton);
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: var(--primary-blue);
+}
+
+.footer h6 {
+    font-size: var(--footer-mobile);
+    color: var(--white);
+}
+
+.error {
+    /* visibility: hidden; */
+    width: 30%;
+    padding: 0;
+    font-size: 60%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: var(--body-m)
+    }
+    .title-start {
+        font-size: 28px;
+        line-height: normal;
+    }
+    .title-end {
+        font-size: 26px;
+    }
+    .carousel-item .banner {
+        content: url("../assets/images/header_tablet.jpg");
+    }
+    .carousel-caption img {
+        position: absolute;
+        top: calc(100vh - 46vh);
+        left: calc(100vh - 85vh);
+    }
+    .logos img {
+        position: absolute;
+        top: calc(100vh - 100vh);
+        /* transform: translateY(-100%); */
+        left: calc(100vh - 85vh);
+    }
+    .title-form {
+        font-size: 11px;
+    }
+    .footer h6 {
+        font-size: var(--body);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .carousel-caption img {
+        position: absolute;
+        top: calc(100vh - 42vh);
+        left: calc(100vh - 75vh);
+    }
+    .title-end {
+        font-size: 28px;
+    }
+    .logos img {
+        position: absolute;
+        top: calc(100vh - 100vh);
+        /* transform: translateY(-100%); */
+        left: calc(100vh - 85vh);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: var(--body)
+    }
+    .carousel-item .banner {
+        content: url("../assets/images/header1.jpg");
+        height: 74vh;
+    }
+    .carousel-caption img {
+        position: absolute;
+        width: 35%;
+        top: calc(100vh - 63vh);
+        left: calc(100vh - 20vh);
+    }
+    .logos img {
+        width: 30%;
+        position: absolute;
+        top: calc(100vh - 98vh);
+        left: calc(100vh - 115vh);
+    }
+    .title-form {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .carousel-item .banner {
+        height: 80vh;
+    }
+    .carousel-caption img {
+        position: absolute;
+        width: 30%;
+        top: calc(100vh - 60vh);
+        left: calc(130vh - 8vh);
+    }
+    .logos img {
+        width: 30%;
+        position: absolute;
+        top: calc(100vh - 98vh);
+        left: calc(50vh - 70vh);
+    }
+    .title-end {
+        font-size: 34px;
+    }
+}

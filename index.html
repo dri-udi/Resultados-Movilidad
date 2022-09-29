@@ -1,27 +1,147 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="container text-center">
-        <form>
-           <div class="row justify-content-center mt-5">
-            <div class="col-12 col-md-4">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
-            </div>
-            
-           </div>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
 
-           <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-    </div>
-  </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SBO KONNECCT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./assets/images/xamai.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.css" />
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    
+    <main>
+
+        <section>
+            <div class="container">
+                <div class="row d-flex align-items-center py-md-5">
+
+                    <div class="col-12 col-lg-8 mx-lg-auto pb-5 wow fadeInLeftBig" data-wow-delay=".5s" id="registro">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-header border-0 bg-transparent py-0">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-10 bg-orange text-center">
+                                            <p class="title-form my-2">
+                                                <span class="w700">16, 17 y 18 de Noviembre</span> </p>
+                                        </div>
+                                        <div class="col-2 bg-codigo text-center">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body py-0">
+                                <div class="container">
+                                    <div class="row bg-blue px-2">
+                                        <div class="col-12 col-lg-10 mx-lg-auto">
+                                            <p class="title-form text-white text-center py-2 px-3">¡Regístrate y conoce las <span class="w700">novedades</span> que traemos <span class="w700">para ti!</span></p>
+                                            <form class="row g-4" name="formXamai" id="xamai">
+
+                                            
+                                                <div class="col-md-6 justify-content-center">
+                                                    <input type="text" pattern="[0-9]+" class="form-control" id="Boleta" name="Boleta" placeholder="Boleta:" required minlength="10" maxlength="10" autocomplete="off">
+                                                    <span class="error" aria-live="polite"></span>
+                                                </div>
+
+
+                                               
+                                                <div class="col-md-12 d-flex justify-content-end">
+                                                    <button id="enviar" type="submit" class="btn rounded-pill mb-3">Registrar</button>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <!-- <div class="col-12 col-md-4 text-center order-md-2 pt-3">
+                                            <img class="img-fluid w-75" src="./assets/images/nube.png" alt="nube">
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-10 bg-orange text-center">
+                                    <p class="title-form m-1 m-md-4">
+                                        Registro exitoso </p>
+                                </div>
+                                <div class="col-2 bg-codigo text-center">
+
+                                </div>
+
+                            </div>
+
+                            <div class="row d-flex justify-content-center pb-2 bg-blue">
+                                <div class="col-12 py-2">
+                                    <p class="title-form text-white text-center">Hola <span class="NombreC"></span> el resultado de su movilidad es <br>
+                                        <span class="Resultado"></span>
+                                    </p>
+
+
+                                </div>
+                                <div class="col-9 d-flex justify-content-center">
+                                    <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">Regresar</button>
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/wow.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true, // default
+           
+        });
+        wow.init();
+    </script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+
+</body>
+
 </html>
