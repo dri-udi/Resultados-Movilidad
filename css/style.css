@@ -7,20 +7,20 @@
     --bg-form: #D9D9D9;
     --bg-card: #676565;
     --bg-botton: #FFD422;
-    --size-title: 28px;
-    --size-title-mobile: 18px;
-    --size-subtitle: 30px;
-    --size-subtitle-mobile: 22px;
+    --size-title: 20px;
+    --size-title-mobile: 12px;
+    --size-subtitle: 22px;
+    --size-subtitle-mobile: 15px;
     --items-nav-footer: 16px;
     --caption: 12px;
-    --body: 22px;
-    --body-m: 18px;
-    --body-mobile: 12px;
+    --body: 18px;
+    --body-m: 13px;
+    --body-mobile: 11px;
     --footer-mobile: 11px;
-    --card-unit: 24px;
-    --card-unit-mobile: 15px;
-    --card-price: 32px;
-    --card-price-mobile: 28px;
+    --card-unit: 18px;
+    --card-unit-mobile: 12px;
+    --card-price: 22px;
+    --card-price-mobile: 22px;
     --button: 14px;
     --font-secondary: 'Lato', sans-serif;
     --font-principal: 'Poppins', sans-serif;
@@ -278,7 +278,7 @@ input[type=number]::-webkit-outer-spin-button {
     .btn {
         background-color: var(--bg-botton);
         color: #000000;
-        font-size: 25px;
+        font-size: 15px;
         font-weight: 600;
     }
     .footer h6 {
@@ -290,51 +290,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media only screen and (min-width: 1024px) {
-    .title-end {
-        font-size: 28px;
-    }
+
     .card-body input[type]::placeholder {
-        font-size: 18px;
+        font-size: 11px;
     }
-    .text-fecha {
-        font-size: 30px;
-    }
+
 }
 
 @media only screen and (min-width: 1200px) {
-    .title-a {
-        font-size: 78px;
-        font-weight: 700;
-    }
-    body {
-        font-size: var(--body)
-    }
-    .carousel-item .banner {
-        content: url("../assets/images/landingF.jpg");
-        height: 74vh;
-    }
+
+
     .title-form {
-        font-size: 30px;
+        font-size: 15px;
     }
-    .imgF .huawei {
-        width: auto;
-    }
-    .imgF .wesap {
-        width: auto;
-    }
-    .imgF .boyum {
-        width: auto;
-    }
-    .imgF .ximplify {
-        width: auto;
-    }
-    .imgF .prolibu {
-        width: auto;
-    }
+
 }
 
-@media only screen and (min-width: 1500px) {
-    .title-end {
-        font-size: 44px;
-    }
-}
