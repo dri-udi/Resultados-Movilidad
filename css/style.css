@@ -146,7 +146,7 @@ body {
 
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 920px) {
 
     .card-body input[type]::placeholder {
         font-size: 14px;
