@@ -66,12 +66,12 @@ body {
 .title-form {
     color: var(--white);
 
-    font-size: 10px;
+    font-size: 9px;
     line-height: normal;
 }
 
 .title-form span{
-    font-size: 12px;
+    font-size: 13px;
 }
 
 
