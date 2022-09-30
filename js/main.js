@@ -4,6 +4,7 @@ let Boleta = document.getElementById("Boleta");
 let corpo = document.getElementsByClassName("error");
 let NombreC = document.getElementsByClassName("NombreC");
 let Resultado = document.getElementsByClassName("Resultado");
+let Serror = document.getElementsByClassName("Serror");
 var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
     keyboard: false
 })
@@ -65,8 +66,8 @@ formCisco.addEventListener('submit', e => {
                 Resultado[0].innerHTML = row[3];
                 Cambio();
              } else {
-                corpo[0].innerHTML = "Boleta No registrada";
-                corpo[0].className = "error active";
+                Serror[0].innerHTML ='<i class="fas fa-exclamation-triangle fa-10x Red"></i> <br> <span class="error">Boleta no registrada</span>'
+               ShowError();
              }
 
          } else {
@@ -86,5 +87,9 @@ function Cambio() {
     document.getElementById("xamai").reset();
 
     // relatedTarget
+    myModal.show()
+}
+function ShowError() {
+    document.getElementById("xamai").reset();
     myModal.show()
 }
