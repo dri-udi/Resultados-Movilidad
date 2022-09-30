@@ -6,7 +6,7 @@
     --form-blue: #003845;
     --bg-form: #D9D9D9;
     --bg-card: #676565;
-    --bg-botton: #FFD422;
+    --bg-botton: #79007F;
     --size-title: 20px;
     --size-title-mobile: 12px;
     --size-subtitle: 22px;
@@ -23,7 +23,7 @@
     --card-price-mobile: 22px;
     --button: 14px;
     --font-secondary: 'Lato', sans-serif;
-    --font-principal: 'Poppins', sans-serif;
+    --font-principal: 'Montserrat Alternates', sans-serif;
 }
 html, body {
     min-height: 50%;
@@ -44,48 +44,15 @@ body {
     font-size: var(--body-mobile)
 }
 
-h1,
-h2 {
-    font-size: var(--size-title-mobile);
-    font-family: var(--font-principal);
-}
-
-h5 {
-    font-size: var(--size-subtitle-mobile)
-}
 
 .w700 {
     font-weight: 700;
 }
 
-nav {
-    background-color: #000;
-}
 
-.nav-link {
-    color: var(--white);
-    font-size: 20px;
-}
 
-.nav-link:hover,
-.active {
-    color: #FFD422;
-}
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 212, 34, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.navbar-toggler {
-    border-color: var(--bg-botton);
-}
-
-.text-fecha {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.title-a {
+.title {
     font-size: 25px;
     font-weight: 700;
 }
@@ -97,33 +64,25 @@ nav {
 }
 
 .title-form {
-    color: #000000;
-    font-weight: 500;
-    font-size: 15px;
+    color: var(--white);
+
+    font-size: 11px;
     line-height: normal;
 }
 
-.border-gray {
-    border: 3px solid;
-    border-color: #676565;
+.title-form span{
+    font-size: 17px;
 }
 
+
 .bg-blue {
-    background-color: var(--primary-blue);
+    background-color: var(--white);
 }
 
 .bg-orange {
     background-color: var(--bg-botton);
 }
 
-td.bg-codigo,
-.bg-codigo {
-    background-color: var(--bg-card);
-}
-
-.bg-gray {
-    background-color: var(--bg-form);
-}
 
 .bg-title {
     background-color: var(--bg-botton);
@@ -133,28 +92,13 @@ td.bg-codigo,
     color: var(--primary-body);
 }
 
-.rborder-ltop {
-    border-radius: 20px 0px 0px 0px;
-}
-
-.rborder-rtop {
-    border-radius: 0px 20px 0px 0px;
-}
-
-.rborder-bottom {
-    border-radius: 0px 0px 20px 20px;
-}
-
-.carousel-item .banner {
-    content: url("../assets/images/movil.jpg");
-    height: 64vh;
-}
 
 .card-body input[type] {
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    font-weight: bold;
     padding: 4%;
-    border: rgba(255, 255, 255, 0.4);
+    border-color: #606060;
 }
 
 .card-body input[type]::placeholder {
@@ -165,75 +109,23 @@ td.bg-codigo,
 
 .btn {
     background-color: var(--bg-botton);
-    color: #000000;
+    color: var(--white);
     font-size: 14px;
     font-weight: 600;
 }
 
 .btn:hover {
-    background-color: #000;
+    background-color: var(--white);
     color: var(--bg-botton);
+    border-color: var(--bg-botton);
 }
 
-td .calendar {
-    font-size: 13px;
-}
-
-video {
-    width: 100%;
-    height: auto;
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
-/* .addeventatc {
-    background-color: var(--bg-botton);
-    color: #000000;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.addeventatc:hover {
-    background-color: var(--bg-botton);
-    color: #000000;
-    font-size: 25px;
-    font-weight: 600;
-} */
 
 
-/* .imgF .huawei {
-    width: 50%;
-}
 
-.imgF .wesap {
-    width: 50%;
-}
 
-.imgF .boyum {
-    width: 40%;
-}
 
-.imgF .ximplify {
-    width: 20%;
-}
 
-.imgF .prolibu {
-    width: 20%;
-} */
-
-.footer {
-    font-family: var(--font-secondary);
-    background-color: #544992;
-    color: white;
-}
-
-.footer h6 {
-    font-size: var(--footer-mobile);
-}
 
 .error {
     /* visibility: hidden; */
@@ -276,9 +168,7 @@ input[type=number]::-webkit-outer-spin-button {
         height: auto;
     }
     .btn {
-        background-color: var(--bg-botton);
-        color: #000000;
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 600;
     }
     .footer h6 {
@@ -292,7 +182,7 @@ input[type=number]::-webkit-outer-spin-button {
 @media only screen and (min-width: 1024px) {
 
     .card-body input[type]::placeholder {
-        font-size: 11px;
+        font-size: 14px;
     }
 
 }
@@ -301,8 +191,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 
     .title-form {
-        font-size: 15px;
+        font-size: 18px;
     }
-
+    .title-form span{
+        font-size: 28px;
+    }
 }
 
