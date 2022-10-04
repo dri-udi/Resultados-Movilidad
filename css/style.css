@@ -1,11 +1,8 @@
 :root {
-    --primary-blue: #000000;
-    --primary-body: #0D2C33;
-    --secondary-blue: #022E38;
+    --primary-inter: #79007F;
+    --primary-nacional: #C10A74;
+    --primary-posg: #0CBFB6;
     --white: #ffffff;
-    --form-blue: #003845;
-    --bg-form: #D9D9D9;
-    --bg-card: #676565;
     --bg-botton: #79007F;
     --size-title: 20px;
     --size-title-mobile: 12px;
@@ -79,14 +76,16 @@ body {
     background-color: var(--white);
 }
 
-.bg-orange {
-    background-color: var(--bg-botton);
+.bg-inter {
+    background-color: var(--primary-inter);
+}
+.bg-nacional {
+    background-color: var(--primary-nacional);
+}
+.bg-posg {
+    background-color: var(--primary-posg);
 }
 
-
-.bg-title {
-    background-color: var(--bg-botton);
-}
 
 .body-color {
     color: var(--primary-body);
@@ -108,7 +107,7 @@ body {
 }
 
 .btn {
-    background-color: var(--bg-botton);
+    
     color: var(--white);
     font-size: 14px;
     font-weight: 600;
