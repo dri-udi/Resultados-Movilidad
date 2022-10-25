@@ -93,8 +93,7 @@ body {
 }
 
 
-.card-body input[type], 
-.card-body select {
+.card-body input[type] {
     border-radius: 20px;
     font-size: 16px;
     font-weight: bold;
@@ -104,15 +103,16 @@ body {
 
 .card-body select {
     border-radius: 20px;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: bold;
     padding: 3%;    
     border-color: #606060;
 }
-.card-body input[type]::placeholder {
-    color: var(--primary-blue);
-    font-size: 12px;
-    font-weight: 700;
+.card-body input[type]::placeholder,
+.card-body select {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .btn {
