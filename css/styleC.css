@@ -109,7 +109,8 @@ body {
     border-color: #606060;
 }
 .card-body input[type]::placeholder,
-.card-body select::placeholder {
+.card-body select::placeholder,
+.card-body textarea::placeholder {
     color: #606060;
     font-size: 14px;
     font-weight: 400;
