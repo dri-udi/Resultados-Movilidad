@@ -102,6 +102,13 @@ body {
     border-color: #606060;
 }
 
+.card-body select {
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3%;    
+    border-color: #606060;
+}
 .card-body input[type]::placeholder {
     color: var(--primary-blue);
     font-size: 12px;
