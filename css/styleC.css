@@ -1,0 +1,166 @@
+:root {
+    --primary-inter: #79007F;
+    --primary-nacional: #C10A74;
+    --primary-posg: #0CBFB6;
+    --white: #ffffff;
+    --bg-botton: #79007F;
+    --size-title: 20px;
+    --size-title-mobile: 12px;
+    --size-subtitle: 22px;
+    --size-subtitle-mobile: 15px;
+    --items-nav-footer: 16px;
+    --caption: 12px;
+    --body: 18px;
+    --body-m: 13px;
+    --body-mobile: 11px;
+    --footer-mobile: 11px;
+    --card-unit: 18px;
+    --card-unit-mobile: 12px;
+    --card-price: 22px;
+    --card-price-mobile: 22px;
+    --button: 14px;
+    --font-secondary: 'Lato', sans-serif;
+    --font-principal: 'Montserrat Alternates', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+body {
+    font-family: var(--font-principal);
+    font-size: var(--body-mobile);   
+    background: linear-gradient(260.3deg, #6F1C46 73.96%, #FDD1E7 83.83%, #6F1C46 91.15%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.w700 {
+    font-weight: 700;
+}
+
+
+
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.title-end {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--primary-blue);
+}
+
+.title-form {
+    color: var(--white);
+
+    font-size: 9px;
+    line-height: normal;
+}
+
+.title-form span{
+    font-size: 13px;
+}
+
+
+.bg-blue {
+    background-color: var(--white);
+}
+
+.bg-inter {
+    background-color: var(--primary-inter);
+}
+.bg-nacional {
+    background-color: var(--primary-nacional);
+}
+.bg-posg {
+    background-color: var(--primary-posg);
+}
+
+
+.body-color {
+    color: var(--primary-body);
+}
+
+
+.card-body input[type] {
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4%;
+    border-color: #606060;
+}
+
+.card-body input[type]::placeholder {
+    color: var(--primary-blue);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: #FDD1E7;
+    color: #6F1C46;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #6F1C46;
+    color: #FDD1E7;
+    border-color: #FDD1E7;
+}
+
+.Red{
+    color: #900;
+}
+
+
+
+
+
+
+.error {
+    /* visibility: hidden; */
+
+    font-size:20px;
+    font-weight: bold;
+    color: #900;
+ }
+
+.error.active {
+    padding: 0.3em;
+}
+.pad{
+    padding: 5px;
+}
+
+
+
+@media only screen and (min-width: 920px) {
+
+    .card-body input[type]::placeholder {
+        font-size: 14px;
+    }
+    .title-form {
+        font-size: 18px;
+        letter-spacing: -1px;
+    }
+    .title-form span{
+        font-size: 30px;
+    }
+    .pad{
+        padding: 28px;
+    }
+}
+
+
