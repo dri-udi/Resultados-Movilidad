@@ -109,10 +109,10 @@ body {
     border-color: #606060;
 }
 .card-body input[type]::placeholder,
-.card-body select {
+.card-body select::placeholder {
     color: #606060;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .btn {
