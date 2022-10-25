@@ -93,7 +93,8 @@ body {
 }
 
 
-.card-body input[type] {
+.card-body input[type], 
+.card-body select {
     border-radius: 20px;
     font-size: 16px;
     font-weight: bold;
