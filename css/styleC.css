@@ -96,9 +96,9 @@ body {
 .card-body input[type], 
 .card-body textarea {
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
-    padding: 3%;
+    padding: 2%;
     border-color: #000000;
 }
 
@@ -170,6 +170,16 @@ body {
     }
     .pad{
         padding: 28px;
+    }
+}
+
+@media only screen and (min-width:	1140px) {
+    .card-body select {
+        
+        font-size: 16px;
+        
+        padding: 1% 33% 1% 2%;    
+        
     }
 }
 
