@@ -1,5 +1,5 @@
 const formXamai = document.forms['formXamai'];
-const scriptURLXamai = "https://script.google.com/macros/s/AKfycbyNa921I7o-8nxFFnVGEB9iGVrhnzrB8vJbKnq0mh-k9lHfiGNIrO-Vp79KqpTbPbXeiw/exec";
+const scriptURLXamai = "https://script.google.com/macros/s/AKfycbw_-jeH1k8z0e4v-pmJkVEPlJ4MujTLD3nTSn4oa2hahrnlOtUTTYzv2E1DqWYa3sKo/exec";
 
 var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
     keyboard: false
