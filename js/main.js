@@ -63,7 +63,7 @@ formCisco.addEventListener('submit', e => {
 
              if (valBoleta == 1) {
                 fetch(scriptURLXamai, {
-                    mode: 'no-cors',
+                    
                     method: 'POST',
                    
                     body: new FormData(formXamai)
