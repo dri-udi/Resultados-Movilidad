@@ -62,9 +62,15 @@ formCisco.addEventListener('submit', e => {
              }
 
              if (valBoleta == 1) {
-                NombreC[0].innerHTML = row[0]+' ' + row[1];
-                Resultado[0].innerHTML = row[3];
-                Cambio();
+                fetch(scriptURLXamai, {
+        
+                    method: 'POST',
+                   
+                    body: new FormData(formXamai)
+                })
+                .then(response => Cambio())
+                .catch(error => console.error('Error!', error.message))
+            
              } else {
                 Serror[0].innerHTML ='<i class="fas fa-exclamation-triangle fa-10x Red"></i> <br> <span class="error">Boleta no registrada</span>'
                ShowError();
