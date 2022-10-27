@@ -8,8 +8,8 @@ let Serror = document.getElementsByClassName("Serror");
 var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
     keyboard: false
 })
-var CLIENT_ID = 'AIzaSyB319n1GzvpuWWCXIcwAl8-iQU_JQchv7Q';
-var API_KEY = '471138515780-20m05f7glrkmn016vh9aca9v18tg9upq.apps.googleusercontent.com';
+var CLIENT_ID = '471138515780-20m05f7glrkmn016vh9aca9v18tg9upq.apps.googleusercontent.com';
+var API_KEY = 'AIzaSyB319n1GzvpuWWCXIcwAl8-iQU_JQchv7Q';
 
 // Array of API discovery doc URLs for APIs used by the quickstart
 var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
